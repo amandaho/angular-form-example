@@ -9,8 +9,13 @@ import {NgForm} from '@angular/forms';
 export class AppComponent {
   title = 'app';
 
-  onSubmit(data: NgForm){ //data can be anything
-    console.log(data.value)
+  model: object = {
+  first_name: "Bob",
+  last_name: "Smith"
 }
+
+  onSubmit(){ //data can be anything
+    console.log(this.model)
+  }
 
 }
